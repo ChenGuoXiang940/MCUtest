@@ -1,9 +1,9 @@
 void setup() {
   Serial.begin(9600);
 }
+char ch;
+int number;
 void loop(){
-  char ch;
-  int number;
   if (Serial.available()){
     ch = Serial.read();
     if (ch >= '1' && ch <= '9'){

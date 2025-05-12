@@ -1,11 +1,11 @@
-int speakerPin = D3;
+int speak_pin = D3;
 char notes[] = "ccggaagffeeddc ";// 依照簡譜的順序，填入代表的音符，空白代表休止符
 unsigned long beats[] = {1,1,1,1,1,1,2,1,1,1,1,1,1,2,4};// 決定每個音階的拍子
 int length = sizeof(notes);
 int tempo = 300;//一拍 300 ms
 
 void setup() {
-  pinMode(speakerPin, OUTPUT);
+  pinMode(speak_pin, OUTPUT);
 }
 
 void loop() {
@@ -14,7 +14,7 @@ void loop() {
       delay(beats[i] * tempo);
     }
     else {
-      playNote(speakerPin,notes[i], beats[i] * tempo);
+      playNote(speak_pin,notes[i], beats[i] * tempo);
       // 呼叫 palyNote() 這個 function，將音符轉換成訊號讓蜂鳴器發聲
     }
     delay(tempo/10); // 每個音符之間的間隔，這邊設定的長短會有連音 or 段音的效果
