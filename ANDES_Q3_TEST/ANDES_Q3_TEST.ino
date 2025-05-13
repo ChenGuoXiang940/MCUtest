@@ -8,7 +8,6 @@ void setup() {
   lcd.setCursor(0, 1);
   lcd.print("Andes Hello!");
 }
-
 void loop() {
   // Nothing...
 }

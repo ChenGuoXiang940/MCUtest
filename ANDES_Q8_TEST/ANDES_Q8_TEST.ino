@@ -1,7 +1,7 @@
 int count = 0;
 void setup(){
   Serial.begin(9600);
-  pinMode(BT1, INPUT_PULLUP);
+  pinMode(BT1, INPUT);
   attachInterrupt(BT1, counter, FALLING);
 }
 

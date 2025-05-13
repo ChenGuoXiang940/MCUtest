@@ -1,8 +1,7 @@
-#define DATA_DIO  D2 //串列資料輸入腳位
-#define CLK_DIO   D14 //資料位移腳位
-#define LATCH_DIO D15 //栓鎖器控制腳位
-#define BUTTON_COUNT 5
-
+#define data_pin  D2 //串列資料輸入腳位
+#define clk_pin   D14 //資料位移腳位
+#define latch_pin D15 //栓鎖器控制腳位
+#define button_size 5
 const byte BUTTONS[] = {BT1, BT2, BT3, BT4, A0};
 // [hgfe][dcba] 的順序 Ex. [0011][1111]=[3][f] 表示零
 const byte SEGMENT_MAP[]   = {0x4F,0x4F,0x6D,0x7d,0x7f,0x00};
@@ -10,10 +9,10 @@ const byte SEGMENT_MAP[]   = {0x4F,0x4F,0x6D,0x7d,0x7f,0x00};
 const byte SEGMENT_SELECT[] = {0xFE, 0xFD, 0xFB, 0xF7};
 
 void setup() {
-  pinMode(LATCH_DIO, OUTPUT);
-  pinMode(CLK_DIO, OUTPUT);
-  pinMode(DATA_DIO, OUTPUT);
-  for (int i = 0; i < BUTTON_COUNT; i++)pinMode(BUTTONS[i], INPUT);
+  pinMode(data_pin, OUTPUT);
+  pinMode(clk_pin, OUTPUT);
+  pinMode(latch_pin, OUTPUT);
+  for(int i=0;i<button_size;i++)pinMode(BUTTONS[i], INPUT);
 }
 
 void loop() {
@@ -32,11 +31,11 @@ void loop() {
 
 void WriteSegment(byte segment, byte value) {
   // enable
-  digitalWrite(LATCH_DIO, LOW);
+  digitalWrite(latch_pin, LOW);
   // what?
-  shiftOut(DATA_DIO, CLK_DIO, MSBFIRST, SEGMENT_MAP[value]);
+  shiftOut(data_pin, clk_pin, MSBFIRST, SEGMENT_MAP[value]);
   // where?
-  shiftOut(DATA_DIO, CLK_DIO, MSBFIRST, SEGMENT_SELECT[segment]);
+  shiftOut(data_pin, clk_pin, MSBFIRST, SEGMENT_SELECT[segment]);
   // disable
-  digitalWrite(LATCH_DIO, HIGH);
+  digitalWrite(latch_pin, HIGH);
 }
