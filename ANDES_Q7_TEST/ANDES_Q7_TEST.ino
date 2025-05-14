@@ -6,13 +6,12 @@ int number;
 void loop(){
   if (Serial.available()){
     ch = Serial.read();
-    if (ch >= '1' && ch <= '9'){
-      number = ch - '0';
-      Serial.print(number);
-      Serial.print(" ");
-      for (int i = 0; i < number; i++)
-        Serial.print("*");
-      Serial.println(); // 換行
-    }
+    if(ch>'9'||ch<'0')return;
+    number = ch - '0';
+    Serial.print(number);
+    Serial.print(" ");
+    for (int i = 0; i < number; i++)
+      Serial.print("*");
+    Serial.println(); // 換行
   }
 }

@@ -9,7 +9,7 @@
 | 編號 | 題目說明 | 補充 |
 |:-:|:-:|:-:|
 |[1](ANDES_Q1_TEST/ANDES_Q1_TEST.ino)|奇偶數 LED 各自閃一次，接者一條連續閃，循環|digitalWrite、delay|
-|[2](ANDES_Q2_TEST/ANDES_Q2_TEST.ino)|按鍵 BTN4~1 分別顯示七段顯示器 BCD`6,5,3,3`，按鍵 A0 顯示連續 BCD`8`左移|digitalRead、shiftOut|
+|[2](ANDES_Q2_TEST/ANDES_Q2_TEST.ino)|按鍵 BTN1~4 分別顯示七段顯示器 BCD`6,5,3,3`，按鍵 A0 顯示連續 BCD`8`左移|digitalRead、shiftOut|
 |[3](ANDES_Q3_TEST/ANDES_Q3_TEST.ino)|LCD 顯示字串 `Andes Hello!`|`LiquidCrystal`、setCursor|
 |[4](ANDES_Q4_TEST/ANDES_Q4_TEST.ino)|4x4陣列鍵盤字元顯示到 LCD|`LiquidCrystal`|
 |[5](ANDES_Q5_TEST/ANDES_Q5_TEST.ino)|LCD顯示`x年x月x日x時x分x秒`，並可以隨時間變化|`LiquidCrystal`、`RTC`、settime、startcounting|

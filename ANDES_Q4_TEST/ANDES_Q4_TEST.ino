@@ -5,10 +5,9 @@ byte rows[] = {10, 11, 12, 13};
 byte cols[] = {A0, A1, A2, A3};
 byte keyindex=0;
 void setup() {
-  for(int i=0;i<4;i++)  pinMode(rows[i], INPUT);
   for(int i=0;i<4;i++){
+    pinMode(rows[i], INPUT);
     pinMode(cols[i], OUTPUT);
-    digitalWrite(cols[i],HIGH);
   }
   lcd.begin(16, 2);
 }
