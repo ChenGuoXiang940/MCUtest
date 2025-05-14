@@ -19,6 +19,7 @@
 |[9](ANDES_Q9_TEST/ANDES_Q9_TEST.ino)|`LED13`點亮五秒暗，循環|`FlexiTimer2`無用|
 ### 開發板與擴充板資訊
 ![開發板](Screenshots/開發板.png)
+
 以下為開發板與擴充板的元件與功能說明：
 - **LCD1602A 液晶模組**：用於顯示文字與數據。
 - **Reset 按鈕**：重置開發板。
@@ -39,16 +40,16 @@
 |1|下列何者RISC-V 指令集的字組大小無法支援|16|32|64|128|A|
 |7|下列何者DLM base設定是正確的?當DLM size=16KB|0x0000_4000|0x0000_C000|0x0000_5000|0x0000_D000|AB|
 |11|nds32le-elf-nm.exe 的功能是什麼|印出執行檔的組合語言|減少執行檔的 code size|觀察 object file 的符號表|印出 elf 格式的各個 section 資訊|C|
-|17|下列何者功能是 Linux Kernel Features on RISC-V AndesCore™|MMU Support|User Space Cache Control|PLIC Support|Unaligned Acess Exception Handling|ABCD|
-|22|下列何者可為 Linux 的 root filesystem format|Jffs2/Jffs3|Ext2/Ext3|NTFS|squashfs|C|
+|17|下列何者功能是 Linux Kernel Features on RISC-V AndesCore™|MMU Support|User Space Cache Control|PLIC Support|Unaligned Acess Exception Handling|ABCD| 
+|22|下列何者可為 Linux 的 root filesystem format|Jffs2/Jffs3|Ext2/Ext3|NTFS|squashfs|ABD|
 |25|下列何者 ICE 的 JTAG 支援 RISC-V/V5 CPU|AICE-MCU|AICE-MINI+|AICE-MICRO|Bus Blaster v3|BCD|
 |27|下列何者 AndesCore™ RISC-V CPU 為 64 bits cpu|N25F|NX25F|D25F|A25|B|
 |28|下列何者 RISC-V CPU 是 8-stage pipeline|N22|N25F|A25|A45|D|
-|32|下列哪個 RISC-V CPU1 是 5-stage pipeline|N22|N25F|A25|AX25|BCD|
 |33|下列何者 CPU 沒有支援 32GPR|N8|N22|N25F|NX25F|A|
 |36|下列何者 CPU 支援 AXI BUS|N22|N25F|A25|AX25|BCD|
 |37|N25F 最大可 configure 的 DLM Size 為何|8KIB|512KIB|16MIB|32MIB|C|
 |38|下列何者 CPU 支援 ILM/DLM Interface|N22|N25F|N27|A25|ABCD|
+|58|Andes 發展的平台ADP-Corvette-F1, 此平台CPU core為何|N25|A25|AX25|AX25MP|A|
 |60|ADP-XC7K160 開發板支援那一種作業系統|Linux|Unix|Android|Windows XP|A|
 |63|CPU架構之中 pipeline(管線)級數多寡與總工作量(throughput)的差異|級數越多總工作量相同|級數越多總工作量越少|級數越多總工作量越多|級數不影響工作量|C|
 |65|下列何者是RISC-V CPU所能支援的作業系統|Nucleus|Android|Free RTOS|uC-OS II|ABCD|
@@ -64,10 +65,14 @@
   - NTFS 為 Windows 的 root filesystem format 
   - ILM 指令本地儲存器
   - DLM 數據本地儲存器
-  - N2"2" IS 2-STAGE PIPELINE
-  - N2"5"F、A2"5"、AX2"5" ARE 5-STAGE PIPELINE
+  - N22 IS 2-STAGE PIPELINE
+  - N25F、A25、AX25 ARE 5-STAGE PIPELINE
   - A45 IS 8-STAGE PIPELINE (例外)
   - File system management 不是 CPU 資源管理的必備功能
+  - Programmable physical memory attributes 可程式化的物理記憶屬性
+  - code size = data + text
+  - 輸入/輸出單元並不包含於CPU架構
+  - TCP/IP四層協定之三(傳輸層)：TCP/UDP Layer
 
 ### 進度
 - [x] 做實作題目
