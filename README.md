@@ -16,7 +16,7 @@
 |[6](ANDES_Q6_TEST/ANDES_Q6_TEST.ino)|蜂鳴器播放音樂|tone、noTone|
 |[7](ANDES_Q7_TEST/ANDES_Q7_TEST.ino)|串列埠傳送並得到回應|Serial、read|
 |[8](ANDES_Q8_TEST/ANDES_Q8_TEST.ino)|按下按鍵`S17`啟動中斷服務，在串列埠顯示次數|Serial、attachInterrupt、noInterrupts、interrupts|
-|[9](ANDES_Q9_TEST/ANDES_Q9_TEST.ino)|`LED13`點亮五秒暗，循環|`FlexiTimer2`無用|
+|[9](ANDES_Q9_TEST/ANDES_Q9_TEST.ino)|`LED13`點亮五秒暗，循環|`FlexiTimer2`、set、start 筆電無法用|
 ### 開發板與擴充板資訊
 ![開發板](Screenshots/開發板.png)
 
