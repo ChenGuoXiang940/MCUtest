@@ -75,6 +75,10 @@
   - code size = data + text
   - 輸入/輸出單元並不包含於CPU架構
   - TCP/IP四層協定之三(傳輸層)：TCP/UDP Layer
+  - 向量處理器系統(Vector Processor System，VPS) A27
+  - AX25 CPU 內含MMU
+  - NFS 表示 Network filesystem 
+  - 機械指令：  | 運算碼欄位 | 定址指示欄位 | 運算元欄位 |
 
 ### 程式模擬(進階，不考)
 用 C 語言軟體模擬 MCU 的語法指令
