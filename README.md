@@ -53,12 +53,13 @@
 |58|Andes 發展的平台ADP-Corvette-F1, 此平台CPU core為何|N25|A25|AX25|AX25MP|A|
 |60|ADP-XC7K160 開發板支援那一種作業系統|Linux|Unix|Android|Windows XP|A|
 |63|CPU架構之中 pipeline(管線)級數多寡與總工作量(throughput)的差異|級數越多總工作量相同|級數越多總工作量越少|級數越多總工作量越多|級數不影響工作量|C|
-|64|以下何者不是AndesCoreTM N25F的特性|RISC-V CPU架構|ISA 是與ARM相容的|PowerBrake support|Dynamic Branch Prediction|A|
+|64|以下何者不是AndesCoreTM N25F的特性|RISC-V CPU架構|ISA 是與ARM相容的|PowerBrake support|Dynamic Branch Prediction|B|
 |65|下列何者是RISC-V CPU所能支援的作業系統|Nucleus|Android|Free RTOS|uC-OS II|ABCD|
 |72|AE350 platform 的 BUS matrix 無以下那一feature|AX14 相容|AHB Lite 相容|支援16bits data width|支援 32bits address width|D|
 |73|A27可以configure的Multiplier Implementation選擇很多，下列何者不是|radix2|radix32|radix256|fast|B|
 |74|N25 兩個32bits乘法指令cycle數目為以下那個數字|1|36|17|3|A|
 |78|N22 的 BUS 介面支援以下那些 BUS 架構|AHB32|PCI|AHB64|AXI|A|
+|81|下列何者為RISC-V指令集架構特色|自定指令擴展|運算指令結果不產生異常(Exception)|指令繁多，不同架構分支彼此不相容|硬體實現複雜度高|AB|
 |82|下列何者標準擴充指令集名稱在描述：dsp指令集架構|M|P|Q|L|B|
 |83|下列何者不是AndeShape™ AICE-MINI+ 和 AICE-MICRO 的 feature|400kHz JTAG speed|16MHZ JTAG speed|Serial 2 wire debug interface|JTAG 4 wire debug interface|D|
 
@@ -73,10 +74,10 @@
   - File system management 不是 CPU 資源管理的必備功能
   - Programmable physical memory attributes 可程式化的物理記憶屬性
   - code size = data + text
-  - 輸入/輸出單元並不包含於CPU架構
+  - 輸入/輸出單元並不包含於 CPU 架構
   - TCP/IP四層協定之三(傳輸層)：TCP/UDP Layer
   - 向量處理器系統(Vector Processor System，VPS) A27
-  - AX25 CPU 內含MMU
+  - AX25 CPU 內含 MMU
   - NFS 表示 Network filesystem 
   - 機械指令：  | 運算碼欄位 | 定址指示欄位 | 運算元欄位 |
 
