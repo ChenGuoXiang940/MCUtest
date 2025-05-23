@@ -11,11 +11,11 @@
 |[1](ANDES_Q1_TEST/ANDES_Q1_TEST.ino)|奇偶數 LED 各自閃一次，接者一條連續閃，循環|digitalWrite、delay|
 |[2](ANDES_Q2_TEST/ANDES_Q2_TEST.ino)|按鍵 BTN4~1 分別顯示七段顯示器 BCD`6,5,3,3`，按鍵 A0 顯示連續 BCD`8`左移|digitalRead、shiftOut|
 |[3](ANDES_Q3_TEST/ANDES_Q3_TEST.ino)|LCD 顯示字串 `Andes Hello!`|`LiquidCrystal`、begin、setCursor、print|
-|[4](ANDES_Q4_TEST/ANDES_Q4_TEST.ino)|4x4陣列鍵盤字元顯示到 LCD|`LiquidCrystal`、begin、setCursor、print|
+|[4](ANDES_Q4_TEST/ANDES_Q4_TEST.ino)|4x4 陣列鍵盤 1~16 顯示到 LCD|`LiquidCrystal`、begin、setCursor、print|
 |[5](ANDES_Q5_TEST/ANDES_Q5_TEST.ino)|LCD顯示`x年x月x日x時x分x秒`，並可以隨時間變化|`LiquidCrystal`、begin、setCursor、print、`RTC`、settime、startcounting|
 |[6](ANDES_Q6_TEST/ANDES_Q6_TEST.ino)|蜂鳴器播放音樂|sizeof、tone、noTone 音樂不限，做好記的譜|
 |[7](ANDES_Q7_TEST/ANDES_Q7_TEST.ino)|串列埠傳送並得到回應|Serial、begin、available、read、print|
-|[8](ANDES_Q8_TEST/ANDES_Q8_TEST.ino)|按下按鍵`S17`啟動中斷服務，在串列埠顯示次數|Serial、begin、print、println、attachInterrupt、noInterrupts、interrupts|
+|[8](ANDES_Q8_TEST/ANDES_Q8_TEST.ino)|按下按鍵`BT1`啟動中斷服務，在串列埠顯示次數|Serial、begin、print、println、attachInterrupt、noInterrupts、interrupts|
 |[9](ANDES_Q9_TEST/ANDES_Q9_TEST.ino)|`LED13`點亮五秒暗，循環|`FlexiTimer2`、::set、::start 筆電無法用|
 ### 開發板與擴充板資訊
 ![開發板](Screenshots/開發板.png)

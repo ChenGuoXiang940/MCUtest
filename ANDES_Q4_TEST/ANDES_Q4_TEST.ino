@@ -1,6 +1,6 @@
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(8, 9, 4, 5, 6, 7);
-char KeyValue[]={'1','2','3','A','4','5','6','B','7','8','9','C','*','0','#','D'};
+String KeyValue[]={"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"};
 byte rows[] = {10, 11, 12, 13};
 byte cols[] = {A0, A1, A2, A3};
 byte keyindex=0;
